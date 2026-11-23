@@ -3,10 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
   <title>声场序章｜王中亿</title>
   <link rel="stylesheet" href="assets/base.css?v=contact-dialog">
   <link rel="stylesheet" href="assets/interiors.css">
-  <link rel="stylesheet" href="assets/portfolio.css">
+  <link rel="stylesheet" href="assets/portfolio.css?v=inline-video">
+  <script src="assets/case-video.js" defer></script>
   <script src="assets/contact.js" defer></script>
   <link rel="stylesheet" href="assets/process-preview.css">
   <script src="assets/process-preview.js" defer></script>
@@ -30,11 +32,15 @@
       <div class="case-type">AIGC · 产品 TVC</div>
     </div>
     <figure class="case-player product-film">
-      <a class="case-video-link" href="https://www.xiaohongshu.com/explore/6b03a8a3000000002b0344b7?xsec_token=ABvmSyYvpmVHq9irmJPsPRJu0nyJpgbfJXav1fDkDuBTE=&amp;xsec_source=pc_user" target="_blank" rel="noopener noreferrer" aria-label="去小红书观看《声场序章》（新标签页）">
-        <img src="assets/soundstage-product.webp" alt="">
-        <span class="case-video-action">去小红书观看</span>
-      </a>
+      <!-- 原始分享链接 https://www.xiaohongshu.com/explore/6b03a8a3000000002b0344b7?xsec_token=ABvmSyYvpmVHq9irmJPsPRJu0nyJpgbfJXav1fDkDuBTE=&xsec_source=pc_user -->
+      <video id="case-video" controls playsinline preload="none" poster="assets/soundstage-product.webp" tabindex="0"
+        aria-label="声场序章"
+        src="https://sns-video-v3.xhscdn.com/stream/1/110/258/01eb03a7f90495bd01037001a2064b1fd9_258.mp4?sign=0a6b0b3a888f5c71a656febe527e23a0&amp;t=6b0892b0"></video>
+      <button id="case-video-play" class="case-video-link" type="button" aria-label="播放《声场序章》" hidden>
+        <span class="case-video-action">播放视频</span>
+      </button>
     </figure>
+    <p id="case-video-status" class="case-video-status" role="status"></p>
     <section class="case-process" aria-labelledby="video-process">
       <h2 id="video-process">制作重点</h2>
       <p class="process-preview-hint">点击图片放大查看</p>

@@ -3,10 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
   <title>肉鸽游戏买量广告｜王中亿</title>
   <link rel="stylesheet" href="assets/base.css?v=contact-dialog">
   <link rel="stylesheet" href="assets/interiors.css">
-  <link rel="stylesheet" href="assets/portfolio.css">
+  <link rel="stylesheet" href="assets/portfolio.css?v=inline-video">
+  <script src="assets/case-video.js" defer></script>
   <script src="assets/contact.js" defer></script>
   <link rel="stylesheet" href="assets/process-preview.css">
   <script src="assets/process-preview.js" defer></script>
@@ -30,11 +32,15 @@
       <div class="case-type">游戏买量</div>
     </div>
     <figure class="case-player product-film acquisition-player" style="--film-ratio:540/960;--film-width:41.62dvh">
-      <a class="case-video-link" href="https://www.xiaohongshu.com/explore/6b03a786000000002500ab5a?xsec_token=ABvmSyYvpmVHq9irmJPsPRJpSnRs8aeHKTXpx_7aPJmXc=&amp;xsec_source=pc_user" target="_blank" rel="noopener noreferrer" aria-label="去小红书观看《肉鸽游戏买量广告》（新标签页）">
-        <img src="assets/roguelike-ad.webp" alt="">
-        <span class="case-video-action">去小红书观看</span>
-      </a>
+      <!-- 原始分享链接 https://www.xiaohongshu.com/explore/6b03a786000000002500ab5a?xsec_token=ABvmSyYvpmVHq9irmJPsPRJpSnRs8aeHKTXpx_7aPJmXc=&xsec_source=pc_user -->
+      <video id="case-video" controls playsinline preload="none" poster="assets/roguelike-ad.webp" tabindex="0"
+        aria-label="肉鸽游戏买量广告"
+        src="https://sns-video-v3.xhscdn.com/stream/1/110/258/01eb03a6f704997e01037001a20646a3b9_258.mp4?sign=8813ae018973b44e8d9ef99b88ae4bed&amp;t=6b0892b0"></video>
+      <button id="case-video-play" class="case-video-link" type="button" aria-label="播放《肉鸽游戏买量广告》" hidden>
+        <span class="case-video-action">播放视频</span>
+      </button>
     </figure>
+    <p id="case-video-status" class="case-video-status" role="status"></p>
     <section class="case-process" aria-labelledby="roguelike-ad-process">
       <h2 id="roguelike-ad-process">制作重点</h2>
       <p class="process-preview-hint">点击图片放大查看</p>

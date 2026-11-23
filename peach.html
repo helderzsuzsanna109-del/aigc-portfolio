@@ -3,10 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
   <title>桃气初醒｜王中亿</title>
   <link rel="stylesheet" href="assets/base.css?v=contact-dialog">
   <link rel="stylesheet" href="assets/interiors.css">
-  <link rel="stylesheet" href="assets/portfolio.css">
+  <link rel="stylesheet" href="assets/portfolio.css?v=inline-video">
+  <script src="assets/case-video.js" defer></script>
   <script src="assets/contact.js" defer></script>
   <link rel="stylesheet" href="assets/process-preview.css">
   <script src="assets/process-preview.js" defer></script>
@@ -30,11 +32,15 @@
       <div class="case-type">桃子汽水概念广告</div>
     </div>
     <figure class="case-player product-film">
-      <a class="case-video-link" href="https://www.xiaohongshu.com/explore/6b03a54e000000002b03a691?xsec_token=ABvmSyYvpmVHq9irmJPsPRJuT93d-6Wgs_bcwfzKx-4b4=&amp;xsec_source=pc_user" target="_blank" rel="noopener noreferrer" aria-label="去小红书观看《桃气初醒》（新标签页）">
-        <img src="assets/peach.webp" alt="">
-        <span class="case-video-action">去小红书观看</span>
-      </a>
+      <!-- 原始分享链接 https://www.xiaohongshu.com/explore/6b03a54e000000002b03a691?xsec_token=ABvmSyYvpmVHq9irmJPsPRJuT93d-6Wgs_bcwfzKx-4b4=&xsec_source=pc_user -->
+      <video id="case-video" controls playsinline preload="none" poster="assets/peach.webp" tabindex="0"
+        aria-label="桃气初醒"
+        src="https://sns-video-v3.xhscdn.com/stream/79/110/258/01eb03a54433bffe4f037001a2063df8d1_258.mp4?sign=0882c229742f1ff7b383408800029f43&amp;t=6b0892ac"></video>
+      <button id="case-video-play" class="case-video-link" type="button" aria-label="播放《桃气初醒》" hidden>
+        <span class="case-video-action">播放视频</span>
+      </button>
     </figure>
+    <p id="case-video-status" class="case-video-status" role="status"></p>
     <section class="case-process" aria-labelledby="peach-process">
       <h2 id="peach-process">制作重点</h2>
       <p class="process-preview-hint">点击图片放大查看</p>

@@ -3,10 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
   <title>橘光迸发｜王中亿</title>
   <link rel="stylesheet" href="assets/base.css?v=contact-dialog">
   <link rel="stylesheet" href="assets/interiors.css">
-  <link rel="stylesheet" href="assets/portfolio.css">
+  <link rel="stylesheet" href="assets/portfolio.css?v=inline-video">
+  <script src="assets/case-video.js" defer></script>
   <script src="assets/contact.js" defer></script>
   <link rel="stylesheet" href="assets/process-preview.css">
   <script src="assets/process-preview.js" defer></script>
@@ -30,11 +32,15 @@
       <div class="case-type">橘子汽水概念广告</div>
     </div>
     <figure class="case-player product-film orange-player">
-      <a class="case-video-link" href="https://www.xiaohongshu.com/explore/6b03a51e000000001f015655?xsec_token=ABvmSyYvpmVHq9irmJPsPRJvFzmMWa7ZsydGI07GYTb_w=&amp;xsec_source=pc_user" target="_blank" rel="noopener noreferrer" aria-label="去小红书观看《橘光迸发》（新标签页）">
-        <img src="assets/orange-key.webp" alt="">
-        <span class="case-video-action">去小红书观看</span>
-      </a>
+      <!-- 原始分享链接 https://www.xiaohongshu.com/explore/6b03a51e000000001f015655?xsec_token=ABvmSyYvpmVHq9irmJPsPRJvFzmMWa7ZsydGI07GYTb_w=&xsec_source=pc_user -->
+      <video id="case-video" controls playsinline preload="none" poster="assets/orange-key.webp" tabindex="0"
+        aria-label="橘光迸发"
+        src="https://sns-video-v3.xhscdn.com/stream/79/110/258/01eb03a4b83405944f037001a2063d2c3e_258.mp4?sign=5160164f09add19b137a73a12447ce49&amp;t=6b0892ac"></video>
+      <button id="case-video-play" class="case-video-link" type="button" aria-label="播放《橘光迸发》" hidden>
+        <span class="case-video-action">播放视频</span>
+      </button>
     </figure>
+    <p id="case-video-status" class="case-video-status" role="status"></p>
     <section class="case-process" aria-labelledby="orange-process">
       <h2 id="orange-process">制作重点</h2>
       <p class="process-preview-hint">点击图片放大查看</p>
