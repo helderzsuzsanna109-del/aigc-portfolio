@@ -45,9 +45,9 @@
 .process-gallery.ad-icons{grid-template-columns:repeat(auto-fit,minmax(min(100%,92px),140px))}
 .process-gallery.ad-icons img{height:clamp(90px,15vw,130px)}
 
-.about-page .about-portrait{width:min(100%,290px);aspect-ratio:auto;margin:0;justify-self:end}
+.about-page .about-portrait{width:min(100%,360px);aspect-ratio:auto;margin:0;justify-self:end}
 .about-page .about-portrait img{width:100%;height:auto}
-@media(max-width:640px){.about-page .about-portrait{width:min(100%,220px);justify-self:start}}
+@media(max-width:640px){.about-page .about-portrait{width:min(100%,260px);justify-self:start}}
 
 .case-video-link {
   position:absolute;
