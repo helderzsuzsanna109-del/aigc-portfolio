@@ -3,17 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="referrer" content="no-referrer">
   <title>桃气初醒｜王中亿</title>
   <link rel="stylesheet" href="assets/base.css?v=contact-dialog">
   <link rel="stylesheet" href="assets/interiors.css">
-  <link rel="stylesheet" href="assets/portfolio.css?v=inline-video">
-  <script src="assets/case-video.js" defer></script>
-  <script src="assets/contact.js" defer></script>
+  <link rel="stylesheet" href="assets/portfolio.css">
+  <link rel="stylesheet" href="assets/project-gallery.css?v=video-pack">
   <link rel="stylesheet" href="assets/process-preview.css">
   <script src="assets/process-preview.js" defer></script>
+  <script src="assets/contact.js" defer></script>
 </head>
-<body class="warm-theme view-video">
+<body class="warm-theme">
   <header class="site-header">
     <div class="wrap">
       <a class="wordmark" href="index.html" aria-label="王中亿的首页"><span class="mark" aria-hidden="true">W</span><span class="wordmark-name">王中亿</span></a>
@@ -24,58 +23,161 @@
       </nav>
     </div>
   </header>
-
-  <main class="wrap case-page video-case">
-    <nav class="case-trail" aria-label="页面位置"><a href="work.html">作品集</a><span aria-hidden="true">/</span><a href="work.html?type=video">AIGC 影视</a></nav>
+  <main class="wrap case-page video-case project-case">
+    <nav class="case-trail" aria-label="页面位置"><a href="work.html">作品集</a><span aria-hidden="true">/</span><a href="work.html?type=commercial">产品广告</a></nav>
     <div class="case-intro">
-      <div><h1>桃气初醒</h1><p>用粉色罐身、冰块和飞溅液体呈现桃子汽水的清爽感。</p></div>
-      <div class="case-type">桃子汽水概念广告</div>
+      <div><h1>桃气初醒</h1><p>AIGC · 产品广告</p></div>
     </div>
-    <figure class="case-player product-film">
-      <!-- 原始分享链接 https://www.xiaohongshu.com/explore/6b03a54e000000002b03a691?xsec_token=ABvmSyYvpmVHq9irmJPsPRJuT93d-6Wgs_bcwfzKx-4b4=&xsec_source=pc_user -->
-      <video id="case-video" controls playsinline preload="none" poster="assets/peach.webp" tabindex="0"
-        aria-label="桃气初醒"
-        src="https://sns-video-v3.xhscdn.com/stream/79/110/258/01eb03a54433bffe4f037001a2063df8d1_258.mp4?sign=0882c229742f1ff7b383408800029f43&amp;t=6b0892ac"></video>
-      <button id="case-video-play" class="case-video-link" type="button" aria-label="播放《桃气初醒》" hidden>
-        <span class="case-video-action">播放视频</span>
-      </button>
+    <figure class="case-player project-player" style="--video-ratio:900/516" data-provider="acfun" data-source="https://www.acfun.cn/player/ac49021569" data-title="桃气初醒">
+      <iframe src="https://www.acfun.cn/player/ac49021569" title="桃气初醒｜A 站视频播放器" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
     </figure>
-    <p id="case-video-status" class="case-video-status" role="status"></p>
-    <section class="case-process" aria-labelledby="peach-process">
-      <h2 id="peach-process">制作重点</h2>
+    <section class="project-intro" aria-labelledby="project-intro">
+      <h2 id="project-intro">作品简介</h2>
+      <p>本片围绕桃子汽水的口味与冰爽感展开。产品棚里的水冠、鲜桃、方冰和开罐动作穿插城市天台、滑板与群舞镜头。贯穿人物和包装的桃粉色，让运动场景与产品近景保持统一。</p>
+    </section>
+    <section class="case-process" aria-labelledby="project-assets">
+      <h2 id="project-assets">制作资产</h2>
       <p class="process-preview-hint">点击图片放大查看</p>
-      <article class="process-item">
-        <h3>产品包装与人物造型</h3>
-        <p>蜜桃粉是罐身的主色，深红字标和桃子切片让观众从正面就能认出口味，罐壁水珠则带出冰镇汽水的质感。人物延续包装的粉色，一套用缎面夹克配浅色长裤，另一套用深粉卫衣、宽松牛仔裤和滑板呈现街头感。两套穿搭有不同的气质，也能让人物画面与产品形成呼应。</p>
-        <div class="process-gallery">
+      <section class="project-asset-group">
+        <h3>人物与角色</h3>
+        <div class="project-asset-grid">
           <figure>
-            <a class="process-preview" href="assets/process-peach-woman.webp" aria-label="放大查看：粉色夹克人物造型">
-              <img src="assets/process-peach-woman.webp" alt="粉色夹克人物造型" width="960" height="1440" loading="lazy">
+            <a class="process-preview" href="assets/projects/peach/e8a792e889b2-01.webp" aria-label="放大查看：浅粉开衫舞者">
+              <img src="assets/projects/peach/e8a792e889b2-01.webp" alt="浅粉开衫舞者" width="1440" height="1440" loading="lazy" decoding="async">
             </a>
-            <figcaption>粉色夹克人物造型</figcaption>
+            <figcaption><strong>浅粉开衫舞者</strong><p>右后方短发女舞者，粉开衫、米白内搭与浅灰牛仔裤。</p></figcaption>
           </figure>
           <figure>
-            <a class="process-preview" href="assets/process-peach-packaging.webp" aria-label="放大查看：桃子汽水罐身">
-              <img src="assets/process-peach-packaging.webp" alt="桃子汽水罐身" width="1200" height="1200" loading="lazy">
+            <a class="process-preview" href="assets/projects/peach/e8a792e889b2-02.webp" aria-label="放大查看：浅色牛仔舞者">
+              <img src="assets/projects/peach/e8a792e889b2-02.webp" alt="浅色牛仔舞者" width="1440" height="1440" loading="lazy" decoding="async">
             </a>
-            <figcaption>桃子汽水罐身</figcaption>
+            <figcaption><strong>浅色牛仔舞者</strong><p>左中男舞者，粉薄夹克配同色内搭与浅蓝牛仔，抬臂时露出袖口和腰线。</p></figcaption>
           </figure>
           <figure>
-            <a class="process-preview" href="assets/process-peach-skater.webp" aria-label="放大查看：滑板人物造型">
-              <img src="assets/process-peach-skater.webp" alt="滑板人物造型" width="960" height="1440" loading="lazy">
+            <a class="process-preview" href="assets/projects/peach/e8a792e889b2-03.webp" aria-label="放大查看：深色外套舞者">
+              <img src="assets/projects/peach/e8a792e889b2-03.webp" alt="深色外套舞者" width="1440" height="1440" loading="lazy" decoding="async">
             </a>
-            <figcaption>滑板人物造型</figcaption>
+            <figcaption><strong>深色外套舞者</strong><p>左前景浅发青年，深色外套内露白衣，和粉色群舞服形成色差。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/peach/e8a792e889b2-04.webp" aria-label="放大查看：滑板男孩">
+              <img src="assets/projects/peach/e8a792e889b2-04.webp" alt="滑板男孩" width="1440" height="1440" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>滑板男孩</strong><p>滑板段的成年青年。粉上衣、灰蓝宽腿牛仔裤、黑滑板鞋。以腾空前后的宽松衣褶连续。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/peach/e8a792e889b2-05.webp" aria-label="放大查看：灯廊饮用女主">
+              <img src="assets/projects/peach/e8a792e889b2-05.webp" alt="灯廊饮用女主" width="1440" height="1440" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>灯廊饮用女主</strong><p>灯廊女主延续天台脸型，改为长发粉色细编发，粉色纹理外套。头部特写不遮挡脸。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/peach/e8a792e889b2-06.webp" aria-label="放大查看：玫粉短袖舞者">
+              <img src="assets/projects/peach/e8a792e889b2-06.webp" alt="玫粉短袖舞者" width="1440" height="1440" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>玫粉短袖舞者</strong><p>广场群舞中央偏左的长发女舞者，玫粉短袖与灰蓝百褶裙，转身时裙摆扬起。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/peach/e8a792e889b2-07.webp" aria-label="放大查看：白帽短裙舞者">
+              <img src="assets/projects/peach/e8a792e889b2-07.webp" alt="白帽短裙舞者" width="1440" height="1440" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>白帽短裙舞者</strong><p>广场中央偏右白帽舞者，粉针织、蓝格露边、黑色直裙。镜头主要从侧后方记录，正脸据轮廓补齐。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/peach/e8a792e889b2-08.webp" aria-label="放大查看：高马尾女主">
+              <img src="assets/projects/peach/e8a792e889b2-08.webp" alt="高马尾女主" width="1440" height="1440" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>高马尾女主</strong><p>城市天台递出汽水罐的女主，高马尾、淡粉夹克，眼神坚定，衣料略带缎面反光。</p></figcaption>
           </figure>
         </div>
-      </article>
+      </section>
+      <section class="project-asset-group">
+        <h3>场景与布景</h3>
+        <div class="project-asset-grid">
+          <figure>
+            <a class="process-preview" href="assets/projects/peach/e59cbae699af-01.webp" aria-label="放大查看：日落城市天台">
+              <img src="assets/projects/peach/e59cbae699af-01.webp" alt="日落城市天台" width="960" height="1440" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>日落城市天台</strong><p>场景设定用于「天台向镜头递罐」段落。女主转身亮罐，镜头沿玻璃栏杆推近。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/peach/e59cbae699af-02.webp" aria-label="放大查看：玻璃幕墙舞蹈广场">
+              <img src="assets/projects/peach/e59cbae699af-02.webp" alt="玻璃幕墙舞蹈广场" width="1080" height="1440" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>玻璃幕墙舞蹈广场</strong><p>场景设定用于「广场群舞与碰罐」段落。六人举罐转向，罐在中轴相碰，转到粉色泡沫。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/peach/e59cbae699af-03.webp" aria-label="放大查看：粉色汽水摄影棚">
+              <img src="assets/projects/peach/e59cbae699af-03.webp" alt="粉色汽水摄影棚" width="960" height="1440" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>粉色汽水摄影棚</strong><p>场景设定用于「水滴击出桃粉水冠」段落。一滴落在浅液层上，水冠展开后切桃绒。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/peach/e59cbae699af-04.webp" aria-label="放大查看：粉色灯带走廊">
+              <img src="assets/projects/peach/e59cbae699af-04.webp" alt="粉色灯带走廊" width="1080" height="1440" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>粉色灯带走廊</strong><p>场景设定用于「灯廊饮用」段落。女主抬罐饮用，背后灯带移动。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/peach/e59cbae699af-05.webp" aria-label="放大查看：粉色玻璃滑板廊">
+              <img src="assets/projects/peach/e59cbae699af-05.webp" alt="粉色玻璃滑板廊" width="960" height="1440" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>粉色玻璃滑板廊</strong><p>场景设定用于「滑板掠过镜头」段落。轮子进入镜面，青年腾起，产品浮在前景。</p></figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="project-asset-group">
+        <h3>道具与产品</h3>
+        <div class="project-asset-grid">
+          <figure>
+            <a class="process-preview" href="assets/projects/peach/e98193e585b7-01.webp" aria-label="放大查看：切面桃瓣">
+              <img src="assets/projects/peach/e98193e585b7-01.webp" alt="切面桃瓣" width="1440" height="960" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>切面桃瓣</strong><p>飞起的切桃瓣，果核缺口边略红，果肉发白，薄皮外弧淡粉。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/peach/e98193e585b7-02.webp" aria-label="放大查看：带叶鲜桃">
+              <img src="assets/projects/peach/e98193e585b7-02.webp" alt="带叶鲜桃" width="1440" height="960" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>带叶鲜桃</strong><p>流体环绕的带叶蜜桃，果绒、浅粉渐红和一片短绿叶是识别点。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/peach/e98193e585b7-03.webp" aria-label="放大查看：桃味汽水罐·封口">
+              <img src="assets/projects/peach/e98193e585b7-03.webp" alt="桃味汽水罐·封口" width="1440" height="960" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>桃味汽水罐·封口</strong><p>粉色细高罐，银色边口、冷凝水珠与封口平拉环。包装印字和果图省去，保留罐色。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/peach/e98193e585b7-04.webp" aria-label="放大查看：桃味汽水罐·开口">
+              <img src="assets/projects/peach/e98193e585b7-04.webp" alt="桃味汽水罐·开口" width="1440" height="960" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>桃味汽水罐·开口</strong><p>开口罐与封口罐同尺寸，拉环翻起与实际饮口在上视图可辨。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/peach/e98193e585b7-05.webp" aria-label="放大查看：街式滑板">
+              <img src="assets/projects/peach/e98193e585b7-05.webp" alt="街式滑板" width="1440" height="960" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>街式滑板</strong><p>街式滑板保持浅木底、银色桥和白轮，底面贴花留空。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/peach/e98193e585b7-06.webp" aria-label="放大查看：透明产品托台">
+              <img src="assets/projects/peach/e98193e585b7-06.webp" alt="透明产品托台" width="1440" height="960" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>透明产品托台</strong><p>粉棚收尾承托汽水罐与冰的透明台，边棱折射明显，轮廓干净。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/peach/e98193e585b7-07.webp" aria-label="放大查看：透明方冰">
+              <img src="assets/projects/peach/e98193e585b7-07.webp" alt="透明方冰" width="1440" height="960" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>透明方冰</strong><p>摄影台与飞溅镜头里使用的透明方冰，脚线略钝，保留细泡。</p></figcaption>
+          </figure>
+        </div>
+      </section>
     </section>
     <div class="case-links"><a href="work.html">返回作品集</a></div>
   </main>
-
   <footer class="site-footer">
-    <div class="wrap">
-      <p><strong>王中亿</strong></p>
-    </div>
+    <div class="wrap"><p><strong>王中亿</strong></p></div>
   </footer>
 </body>
 </html>

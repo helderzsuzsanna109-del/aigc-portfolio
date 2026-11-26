@@ -1,5 +1,6 @@
 const typeParam = new URLSearchParams(window.location.search).get("type");
-const selectedType = typeParam === "video" || typeParam === "design" ? typeParam : "";
+const filters = document.querySelectorAll("[data-filter]");
+const selectedType = Array.from(filters).some(link => link.dataset.filter === typeParam) ? typeParam : "";
 const workCards = document.querySelectorAll("[data-work-type]");
 let visibleCount = 0;
 
@@ -8,7 +9,7 @@ for (const card of workCards) {
   if (!card.hidden) visibleCount++;
 }
 
-for (const link of document.querySelectorAll("[data-filter]")) {
+for (const link of filters) {
   const selected = link.dataset.filter === selectedType;
   link.classList.toggle("selected", selected);
   if (selected) link.setAttribute("aria-current", "page");

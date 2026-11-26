@@ -3,17 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="referrer" content="no-referrer">
   <title>橘光迸发｜王中亿</title>
   <link rel="stylesheet" href="assets/base.css?v=contact-dialog">
   <link rel="stylesheet" href="assets/interiors.css">
-  <link rel="stylesheet" href="assets/portfolio.css?v=inline-video">
-  <script src="assets/case-video.js" defer></script>
-  <script src="assets/contact.js" defer></script>
+  <link rel="stylesheet" href="assets/portfolio.css">
+  <link rel="stylesheet" href="assets/project-gallery.css?v=video-pack">
   <link rel="stylesheet" href="assets/process-preview.css">
   <script src="assets/process-preview.js" defer></script>
+  <script src="assets/contact.js" defer></script>
 </head>
-<body class="warm-theme view-video">
+<body class="warm-theme">
   <header class="site-header">
     <div class="wrap">
       <a class="wordmark" href="index.html" aria-label="王中亿的首页"><span class="mark" aria-hidden="true">W</span><span class="wordmark-name">王中亿</span></a>
@@ -24,58 +23,90 @@
       </nav>
     </div>
   </header>
-
-  <main class="wrap case-page video-case">
-    <nav class="case-trail" aria-label="页面位置"><a href="work.html">作品集</a><span aria-hidden="true">/</span><a href="work.html?type=video">AIGC 影视</a></nav>
+  <main class="wrap case-page video-case project-case">
+    <nav class="case-trail" aria-label="页面位置"><a href="work.html">作品集</a><span aria-hidden="true">/</span><a href="work.html?type=commercial">产品广告</a></nav>
     <div class="case-intro">
-      <div><h1>橘光迸发</h1><p>从枝头鲜橘切入，以鲜果和产品镜头呈现橘子汽水的风味。</p></div>
-      <div class="case-type">橘子汽水概念广告</div>
+      <div><h1>橘光迸发</h1><p>AIGC · 产品广告</p></div>
     </div>
-    <figure class="case-player product-film orange-player">
-      <!-- 原始分享链接 https://www.xiaohongshu.com/explore/6b03a51e000000001f015655?xsec_token=ABvmSyYvpmVHq9irmJPsPRJvFzmMWa7ZsydGI07GYTb_w=&xsec_source=pc_user -->
-      <video id="case-video" controls playsinline preload="none" poster="assets/orange-key.webp" tabindex="0"
-        aria-label="橘光迸发"
-        src="https://sns-video-v3.xhscdn.com/stream/79/110/258/01eb03a4b83405944f037001a2063d2c3e_258.mp4?sign=5160164f09add19b137a73a12447ce49&amp;t=6b0892ac"></video>
-      <button id="case-video-play" class="case-video-link" type="button" aria-label="播放《橘光迸发》" hidden>
-        <span class="case-video-action">播放视频</span>
-      </button>
+    <figure class="case-player project-player" style="--video-ratio:900/508" data-provider="acfun" data-source="https://www.acfun.cn/player/ac49021549" data-title="橘光迸发">
+      <iframe src="https://www.acfun.cn/player/ac49021549" title="橘光迸发｜A 站视频播放器" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
     </figure>
-    <p id="case-video-status" class="case-video-status" role="status"></p>
-    <section class="case-process" aria-labelledby="orange-process">
-      <h2 id="orange-process">制作重点</h2>
+    <section class="project-intro" aria-labelledby="project-intro">
+      <h2 id="project-intro">作品简介</h2>
+      <p>镜头从挂果橙树推进到一颗熟橙，跟着果实入水看见上升的气泡。果瓣、冰块与开罐镜头依次接上，最后收在斜置的橙味汽水罐。鲜果、气泡与水花分别交代口味、气感和冰爽感。</p>
+    </section>
+    <section class="case-process" aria-labelledby="project-assets">
+      <h2 id="project-assets">制作资产</h2>
       <p class="process-preview-hint">点击图片放大查看</p>
-      <article class="process-item">
-        <h3>用鲜橙、气泡和冰块表现清爽感</h3>
-        <p>橙黄渐变、白色字标和橙切片插画一起建立罐身识别。鲜橙入水的画面用深色背景衬出果皮纹理、水面涟漪和上升的气泡，表现汽水的清爽口感。主视觉把罐身斜置在画面中央，冰块、橙片和飞溅液体沿斜线展开，让画面有迸发感，也让包装保留清晰的阅读位置。</p>
-        <div class="process-gallery orange-gallery">
+      <section class="project-asset-group">
+        <h3>场景与布景</h3>
+        <div class="project-asset-grid">
           <figure>
-            <a class="process-preview" href="assets/orange-key.webp" aria-label="放大查看：产品主视觉">
-              <img src="assets/orange-key.webp" alt="产品主视觉" width="1400" height="788" loading="lazy">
+            <a class="process-preview" href="assets/projects/orange-soda/e59cbae699af-01.webp" aria-label="放大查看：橙树摄影棚">
+              <img src="assets/projects/orange-soda/e59cbae699af-01.webp" alt="橙树摄影棚" width="960" height="1440" loading="lazy" decoding="async">
             </a>
-            <figcaption>产品主视觉</figcaption>
+            <figcaption><strong>橙树摄影棚</strong><p>场景设定用于「黑场里显出结果树」段落。先露出树冠暖点，再推入叶簇。</p></figcaption>
           </figure>
           <figure>
-            <a class="process-preview" href="assets/orange-water.webp" aria-label="放大查看：鲜橙入水与气泡">
-              <img src="assets/orange-water.webp" alt="鲜橙入水与气泡" width="1400" height="788" loading="lazy">
+            <a class="process-preview" href="assets/projects/orange-soda/e59cbae699af-02.webp" aria-label="放大查看：水下落橙水槽">
+              <img src="assets/projects/orange-soda/e59cbae699af-02.webp" alt="水下落橙水槽" width="1080" height="1440" loading="lazy" decoding="async">
             </a>
-            <figcaption>鲜橙入水与气泡</figcaption>
+            <figcaption><strong>水下落橙水槽</strong><p>场景设定用于「橙子没入水下」段落。下沉的果实拖出一列透明气泡。</p></figcaption>
           </figure>
           <figure>
-            <a class="process-preview" href="assets/orange-can.webp" aria-label="放大查看：橙味汽水罐身">
-              <img src="assets/orange-can.webp" alt="橙味汽水罐身" width="1100" height="1100" loading="lazy">
+            <a class="process-preview" href="assets/projects/orange-soda/e59cbae699af-03.webp" aria-label="放大查看：汽水飞溅产品台">
+              <img src="assets/projects/orange-soda/e59cbae699af-03.webp" alt="汽水飞溅产品台" width="960" height="1440" loading="lazy" decoding="async">
             </a>
-            <figcaption>橙味汽水罐身</figcaption>
+            <figcaption><strong>汽水飞溅产品台</strong><p>场景设定用于「果冰围绕汽水罐」段落。果瓣、冰块与暖色汽水在罐周围交错飞起。</p></figcaption>
           </figure>
         </div>
-      </article>
+      </section>
+      <section class="project-asset-group">
+        <h3>道具与产品</h3>
+        <div class="project-asset-grid">
+          <figure>
+            <a class="process-preview" href="assets/projects/orange-soda/e98193e585b7-01.webp" aria-label="放大查看：完整鲜橙">
+              <img src="assets/projects/orange-soda/e98193e585b7-01.webp" alt="完整鲜橙" width="1440" height="960" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>完整鲜橙</strong><p>枝上特写、坠落和入水都使用同一整橙，果皮颗粒与蒂眼保持连贯。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/orange-soda/e98193e585b7-02.webp" aria-label="放大查看：挂果橙树">
+              <img src="assets/projects/orange-soda/e98193e585b7-02.webp" alt="挂果橙树" width="1440" height="960" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>挂果橙树</strong><p>片头橙树。深绿色有蜡质叶、饱满橙果、深棕直树干。六视保持同一冠形。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/orange-soda/e98193e585b7-03.webp" aria-label="放大查看：方形透明冰块">
+              <img src="assets/projects/orange-soda/e98193e585b7-03.webp" alt="方形透明冰块" width="1440" height="960" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>方形透明冰块</strong><p>围绕罐体的透明冰方，内部气泡少，轮廓以略钝方角为主。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/orange-soda/e98193e585b7-04.webp" aria-label="放大查看：橙味汽水罐·封口">
+              <img src="assets/projects/orange-soda/e98193e585b7-04.webp" alt="橙味汽水罐·封口" width="1440" height="960" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>橙味汽水罐·封口</strong><p>成品罐的封口状态。橙黄罐身、银盖和冷凝珠。外观色彩保留，包装文字与标识清空。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/orange-soda/e98193e585b7-05.webp" aria-label="放大查看：橙味汽水罐·开口">
+              <img src="assets/projects/orange-soda/e98193e585b7-05.webp" alt="橙味汽水罐·开口" width="1440" height="960" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>橙味汽水罐·开口</strong><p>开盖细节的连续性状态。翻起拉环、开启的饮口、罐肩水珠；罐身外形与封口版相同。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/orange-soda/e98193e585b7-06.webp" aria-label="放大查看：鲜橙果瓣">
+              <img src="assets/projects/orange-soda/e98193e585b7-06.webp" alt="鲜橙果瓣" width="1440" height="960" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>鲜橙果瓣</strong><p>产品周围飞散的鲜切果片；保持橙皮、白瓤与果肉的可辨厚度。</p></figcaption>
+          </figure>
+        </div>
+      </section>
     </section>
     <div class="case-links"><a href="work.html">返回作品集</a></div>
   </main>
-
   <footer class="site-footer">
-    <div class="wrap">
-      <p><strong>王中亿</strong></p>
-    </div>
+    <div class="wrap"><p><strong>王中亿</strong></p></div>
   </footer>
 </body>
 </html>

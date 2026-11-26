@@ -1,0 +1,105 @@
+.video-case .project-player {
+  aspect-ratio: var(--video-ratio);
+  background: #171312;
+}
+
+.video-case .project-player.portrait {
+  width: min(100%, 410px, 52svh);
+  margin-inline: auto;
+}
+
+.project-player > iframe,
+.project-player > video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  object-fit: contain;
+}
+
+.case-player .project-start img,
+.case-player .project-start .case-video-action {
+  grid-area: 1 / 1;
+}
+
+.video-case .project-player .project-start img {
+  object-fit: contain;
+}
+
+.project-intro {
+  margin-top: clamp(1.7rem, 4vw, 3.5rem);
+}
+
+.project-intro p {
+  max-width: 72ch;
+  margin-top: .65rem;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.project-asset-group + .project-asset-group {
+  margin-top: 2.5rem;
+}
+
+.project-asset-group h3 {
+  margin: 0 0 1rem;
+}
+
+.project-asset-group:first-of-type {
+  margin-top: 1.25rem;
+}
+
+.project-asset-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem 1rem;
+}
+
+.project-asset-grid figure {
+  margin: 0;
+  min-width: 0;
+}
+
+.project-asset-grid .process-preview {
+  background: #eae2d5;
+  border-radius: .45rem;
+}
+
+.project-asset-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  height: auto;
+  object-fit: contain;
+}
+
+.project-asset-grid figcaption {
+  margin-top: .6rem;
+}
+
+.project-asset-grid figcaption p {
+  margin: .24rem 0 0;
+  color: var(--muted);
+  font-size: .9rem;
+  line-height: 1.6;
+}
+
+.work-card[hidden] {
+  display: none;
+}
+
+.work-caption {
+  padding-bottom: .2rem;
+}
+
+@media (max-width: 720px) {
+  .project-asset-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 430px) {
+  .project-asset-grid {
+    grid-template-columns: 1fr;
+  }
+}

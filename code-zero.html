@@ -3,17 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="referrer" content="no-referrer">
   <title>代号·零｜王中亿</title>
   <link rel="stylesheet" href="assets/base.css?v=contact-dialog">
   <link rel="stylesheet" href="assets/interiors.css">
-  <link rel="stylesheet" href="assets/portfolio.css?v=inline-video">
-  <script src="assets/case-video.js" defer></script>
-  <script src="assets/contact.js" defer></script>
+  <link rel="stylesheet" href="assets/portfolio.css">
+  <link rel="stylesheet" href="assets/project-gallery.css?v=video-pack">
   <link rel="stylesheet" href="assets/process-preview.css">
   <script src="assets/process-preview.js" defer></script>
+  <script src="assets/contact.js" defer></script>
 </head>
-<body class="warm-theme view-video">
+<body class="warm-theme">
   <header class="site-header">
     <div class="wrap">
       <a class="wordmark" href="index.html" aria-label="王中亿的首页"><span class="mark" aria-hidden="true">W</span><span class="wordmark-name">王中亿</span></a>
@@ -24,58 +23,125 @@
       </nav>
     </div>
   </header>
-
-  <main class="wrap case-page video-case">
-    <nav class="case-trail" aria-label="页面位置"><a href="work.html">作品集</a><span aria-hidden="true">/</span><a href="work.html?type=video">AIGC 影视</a></nav>
+  <main class="wrap case-page video-case project-case">
+    <nav class="case-trail" aria-label="页面位置"><a href="work.html">作品集</a><span aria-hidden="true">/</span><a href="work.html?type=game">游戏影像</a></nav>
     <div class="case-intro">
-      <div><h1>代号·零</h1><p>以高耸建筑和低饱和的科幻场景建立世界观。</p></div>
-      <div class="case-type">科幻游戏宣传片</div>
+      <div><h1>代号·零</h1><p>AIGC · 游戏影像</p></div>
     </div>
-    <figure class="case-player product-film">
-      <!-- 原始分享链接 https://www.xiaohongshu.com/explore/6b03ae99000000001c033cd3?xsec_token=ABvmSyYvpmVHq9irmJPsPRJkiVcUR4rQZc9H8eoiznT68=&xsec_source=pc_user -->
-      <video id="case-video" controls playsinline preload="none" poster="assets/code-zero.webp" tabindex="0"
-        aria-label="代号·零"
-        src="https://sns-video-v3.xhscdn.com/stream/1/110/258/01eb03ae92091b3f01037001a206623419_258.mp4?sign=35f1168453c2eab97a53c931c0c18ab0&amp;t=6b0892ac"></video>
-      <button id="case-video-play" class="case-video-link" type="button" aria-label="播放《代号·零》" hidden>
-        <span class="case-video-action">播放视频</span>
-      </button>
+    <figure class="case-player project-player" style="--video-ratio:900/386" data-provider="acfun" data-source="https://www.acfun.cn/player/ac49020681" data-title="代号·零">
+      <iframe src="https://www.acfun.cn/player/ac49020681" title="代号·零｜A 站视频播放器" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
     </figure>
-    <p id="case-video-status" class="case-video-status" role="status"></p>
-    <section class="case-process" aria-labelledby="code-zero-process">
-      <h2 id="code-zero-process">制作重点</h2>
+    <section class="project-intro" aria-labelledby="project-intro">
+      <h2 id="project-intro">作品简介</h2>
+      <p>废城中的悬环黑塔为世界设定开场。飞行机甲、持刃机甲与巨型机甲陆续亮相，镜头从街谷升到云海，再转入地球轨道。最后用晶体、眼部特写与逆光披风者保留悬念。</p>
+    </section>
+    <section class="case-process" aria-labelledby="project-assets">
+      <h2 id="project-assets">制作资产</h2>
       <p class="process-preview-hint">点击图片放大查看</p>
-      <article class="process-item">
-        <h3>角色与机甲设定</h3>
-        <p>银发角色用垂落的长披风拉出修长轮廓，与机甲的硬朗结构形成对照。重装机甲用大块装甲突出体量，持剑机甲用剑身延伸轮廓，再以橙色发光细节标出视觉焦点。三组设定把角色、装甲和武器的形态差异落实到轮廓上，即使在全身远景里也更容易区分。</p>
-        <div class="process-gallery">
+      <section class="project-asset-group">
+        <h3>人物与角色</h3>
+        <div class="project-asset-grid">
           <figure>
-            <a class="process-preview" href="assets/process-zero-character.webp" aria-label="放大查看：银发披风角色">
-              <img src="assets/process-zero-character.webp" alt="银发披风角色" width="960" height="1440" loading="lazy">
+            <a class="process-preview" href="assets/projects/code-zero/e8a792e889b2-01.webp" aria-label="放大查看：巨型机甲">
+              <img src="assets/projects/code-zero/e8a792e889b2-01.webp" alt="巨型机甲" width="1440" height="1440" loading="lazy" decoding="async">
             </a>
-            <figcaption>银发披风角色</figcaption>
+            <figcaption><strong>巨型机甲</strong><p>巨型装甲上身宽、腿修长，胸口一点琥珀光。原片大量逆光，前胸与背甲接缝结构为配合现有剪影推定。</p></figcaption>
           </figure>
           <figure>
-            <a class="process-preview" href="assets/process-zero-heavy.webp" aria-label="放大查看：重装机甲">
-              <img src="assets/process-zero-heavy.webp" alt="重装机甲" width="960" height="1440" loading="lazy">
+            <a class="process-preview" href="assets/projects/code-zero/e8a792e889b2-02.webp" aria-label="放大查看：深灰持刃机甲">
+              <img src="assets/projects/code-zero/e8a792e889b2-02.webp" alt="深灰持刃机甲" width="1440" height="1440" loading="lazy" decoding="async">
             </a>
-            <figcaption>重装机甲</figcaption>
+            <figcaption><strong>深灰持刃机甲</strong><p>第二套深灰单兵重甲以红目和黄灯环为识别点。两肩较厚，黑灰甲与灰白飞行机甲区别明显。场景镜头中的刃道具单列。</p></figcaption>
           </figure>
           <figure>
-            <a class="process-preview" href="assets/process-zero-blade.webp" aria-label="放大查看：持剑机甲">
-              <img src="assets/process-zero-blade.webp" alt="持剑机甲" width="960" height="1440" loading="lazy">
+            <a class="process-preview" href="assets/projects/code-zero/e8a792e889b2-03.webp" aria-label="放大查看：灰白飞行机甲">
+              <img src="assets/projects/code-zero/e8a792e889b2-03.webp" alt="灰白飞行机甲" width="1440" height="1440" loading="lazy" decoding="async">
             </a>
-            <figcaption>持剑机甲</figcaption>
+            <figcaption><strong>灰白飞行机甲</strong><p>灰白单兵为飞行装甲角色，保留窄蓝灯、圆耳盘和外露颈管。上格用头盔作头部特写，下格将头盔分离，只展示甲体。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/code-zero/e8a792e889b2-04.webp" aria-label="放大查看：银发披风者">
+              <img src="assets/projects/code-zero/e8a792e889b2-04.webp" alt="银发披风者" width="1440" height="1440" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>银发披风者</strong><p>逆光披风者。依据末尾长银发、肩甲和蓝灰眼纹补出正面，上身外沿较硬，暗披风垂到脚踝。</p></figcaption>
           </figure>
         </div>
-      </article>
+      </section>
+      <section class="project-asset-group">
+        <h3>场景与布景</h3>
+        <div class="project-asset-grid">
+          <figure>
+            <a class="process-preview" href="assets/projects/code-zero/e59cbae699af-01.webp" aria-label="放大查看：云海尾迹空域">
+              <img src="assets/projects/code-zero/e59cbae699af-01.webp" alt="云海尾迹空域" width="1316" height="1440" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>云海尾迹空域</strong><p>场景设定用于「飞入云海尾迹」段落。飞行个体掠过横向白迹，随后改用放射状云层构图。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/code-zero/e59cbae699af-02.webp" aria-label="放大查看：地球轨道弧面">
+              <img src="assets/projects/code-zero/e59cbae699af-02.webp" alt="地球轨道弧面" width="1440" height="1316" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>地球轨道弧面</strong><p>场景设定用于「地球弧面和碎晶」段落。地球弧面泛蓝，切蓝晶碎片与眼部。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/code-zero/e59cbae699af-03.webp" aria-label="放大查看：巨型机甲地表街谷">
+              <img src="assets/projects/code-zero/e59cbae699af-03.webp" alt="巨型机甲地表街谷" width="960" height="1440" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>巨型机甲地表街谷</strong><p>场景设定用于「灰白头盔亮起」段落。头盔转动，蓝色窄灯和颈管进入画面。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/code-zero/e59cbae699af-04.webp" aria-label="放大查看：逆光高台">
+              <img src="assets/projects/code-zero/e59cbae699af-04.webp" alt="逆光高台" width="1316" height="1440" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>逆光高台</strong><p>场景设定用于「逆光披风定帧」段落。风吹开披风，人物停在地平线前，保留画面空位。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/code-zero/e59cbae699af-05.webp" aria-label="放大查看：黑塔悬空环废城">
+              <img src="assets/projects/code-zero/e59cbae699af-05.webp" alt="黑塔悬空环废城" width="960" height="1440" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>黑塔悬空环废城</strong><p>场景设定用于「黑塔及破碎悬空环」段落。镜头对准黑塔，悬空环从云层里显露。</p></figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="project-asset-group">
+        <h3>道具与产品</h3>
+        <div class="project-asset-grid">
+          <figure>
+            <a class="process-preview" href="assets/projects/code-zero/e98193e585b7-01.webp" aria-label="放大查看：尾焰飞行体">
+              <img src="assets/projects/code-zero/e98193e585b7-01.webp" alt="尾焰飞行体" width="1440" height="616" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>尾焰飞行体</strong><p>高空远景中发光拖尾的抽象影视飞行体。几何为简化实心造型，尾迹独立合成。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/code-zero/e98193e585b7-02.webp" aria-label="放大查看：悬浮环片">
+              <img src="assets/projects/code-zero/e98193e585b7-02.webp" alt="悬浮环片" width="1440" height="960" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>悬浮环片</strong><p>从悬浮大环拆出一块黑铸件，可旋转与重复用于天空环带。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/code-zero/e98193e585b7-03.webp" aria-label="放大查看：蓝晶破片">
+              <img src="assets/projects/code-zero/e98193e585b7-03.webp" alt="蓝晶破片" width="1440" height="960" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>蓝晶破片</strong><p>眼部转场的单块淡蓝晶体破片，可做重复变体组，不附眼睛图案。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/code-zero/e98193e585b7-04.webp" aria-label="放大查看：虚构光刃">
+              <img src="assets/projects/code-zero/e98193e585b7-04.webp" alt="虚构光刃" width="1440" height="616" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>虚构光刃</strong><p>深灰机甲手持的影视光刃，只保留曲面轮廓、灰握柄和橙亮边，烧蚀火星由后期完成。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/code-zero/e98193e585b7-05.webp" aria-label="放大查看：黑色中轴塔">
+              <img src="assets/projects/code-zero/e98193e585b7-05.webp" alt="黑色中轴塔" width="1440" height="960" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>黑色中轴塔</strong><p>中轴黑塔，最上部窄环非文字。塔身斜切体、直纵线和阶梯底座匹配场景。</p></figcaption>
+          </figure>
+        </div>
+      </section>
     </section>
     <div class="case-links"><a href="work.html">返回作品集</a></div>
   </main>
-
   <footer class="site-footer">
-    <div class="wrap">
-      <p><strong>王中亿</strong></p>
-    </div>
+    <div class="wrap"><p><strong>王中亿</strong></p></div>
   </footer>
 </body>
 </html>

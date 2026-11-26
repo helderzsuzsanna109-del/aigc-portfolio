@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="referrer" content="no-referrer">
   <title>声场序章｜王中亿</title>
   <link rel="stylesheet" href="assets/base.css?v=contact-dialog">
   <link rel="stylesheet" href="assets/interiors.css">
-  <link rel="stylesheet" href="assets/portfolio.css?v=inline-video">
-  <script src="assets/case-video.js" defer></script>
-  <script src="assets/contact.js" defer></script>
+  <link rel="stylesheet" href="assets/portfolio.css">
+  <link rel="stylesheet" href="assets/project-gallery.css?v=video-pack">
   <link rel="stylesheet" href="assets/process-preview.css">
+  <script src="assets/project-playback.js?v=video-pack" defer></script>
   <script src="assets/process-preview.js" defer></script>
+  <script src="assets/contact.js" defer></script>
 </head>
-<body class="warm-theme view-video">
+<body class="warm-theme">
   <header class="site-header">
     <div class="wrap">
       <a class="wordmark" href="index.html" aria-label="王中亿的首页"><span class="mark" aria-hidden="true">W</span><span class="wordmark-name">王中亿</span></a>
@@ -24,100 +24,153 @@
       </nav>
     </div>
   </header>
-
-  <main class="wrap case-page video-case">
-    <nav class="case-trail" aria-label="页面位置"><a href="work.html">作品集</a><span aria-hidden="true">/</span><a href="work.html?type=video">AIGC 影视</a></nav>
+  <main class="wrap case-page video-case project-case">
+    <nav class="case-trail" aria-label="页面位置"><a href="work.html">作品集</a><span aria-hidden="true">/</span><a href="work.html?type=commercial">产品广告</a></nav>
     <div class="case-intro">
-      <div><h1>声场序章</h1><p>耳机概念广告</p></div>
-      <div class="case-type">AIGC · 产品 TVC</div>
+      <div><h1>声场序章</h1><p>AIGC · 产品广告</p></div>
     </div>
-    <figure class="case-player product-film">
-      <!-- 原始分享链接 https://www.xiaohongshu.com/explore/6b03a8a3000000002b0344b7?xsec_token=ABvmSyYvpmVHq9irmJPsPRJu0nyJpgbfJXav1fDkDuBTE=&xsec_source=pc_user -->
-      <video id="case-video" controls playsinline preload="none" poster="assets/soundstage-product.webp" tabindex="0"
-        aria-label="声场序章"
-        src="https://sns-video-v3.xhscdn.com/stream/1/110/258/01eb03a7f90495bd01037001a2064b1fd9_258.mp4?sign=0a6b0b3a888f5c71a656febe527e23a0&amp;t=6b0892b0"></video>
-      <button id="case-video-play" class="case-video-link" type="button" aria-label="播放《声场序章》" hidden>
+    <figure class="case-player project-player" style="--video-ratio:900/506" data-provider="hls" data-source="https://permalink.dogevideo.com/player/get.m3u8?vcode=1033995dec286305&amp;userId=16431&amp;vtype=10&amp;flsign=b04c898bf91e8f898768bb0deb753dee&amp;ext=.m3u8" data-title="声场序章">
+      <a class="case-video-link project-start" href="https://permalink.dogevideo.com/player/get.m3u8?vcode=1033995dec286305&amp;userId=16431&amp;vtype=10&amp;flsign=b04c898bf91e8f898768bb0deb753dee&amp;ext=.m3u8" aria-label="播放《声场序章》">
+        <img src="assets/projects/video/cover.webp" alt="" width="900" height="506">
         <span class="case-video-action">播放视频</span>
-      </button>
+      </a>
     </figure>
-    <p id="case-video-status" class="case-video-status" role="status"></p>
-    <section class="case-process" aria-labelledby="video-process">
-      <h2 id="video-process">制作重点</h2>
+    <p class="case-video-status" role="status"></p>
+    <section class="project-intro" aria-labelledby="project-intro">
+      <h2 id="project-intro">作品简介</h2>
+      <p>一位通勤青年戴着耳机在地铁上睡着。窗外的城市被火山取代，随后他跌进深海，与巨鲨擦肩，最后惊醒回到车厢。现实和梦境之间的切换，把听觉上的沉浸感变成可见的空间变化。</p>
+    </section>
+    <section class="case-process" aria-labelledby="project-assets">
+      <h2 id="project-assets">制作资产</h2>
       <p class="process-preview-hint">点击图片放大查看</p>
-      <article class="process-item">
-        <h3>主角造型</h3>
-        <p>主角穿深色夹克，内搭针织衫和衬衫，再配浅色长裤，看起来就像车厢里一位普通的通勤乘客。画面切到上半身时，深色衣领和头发衬出银色耳机的轮廓。服装配色和耳机也为车厢、水下两段提供了共同的识别线索。</p>
-        <div class="process-gallery">
+      <section class="project-asset-group">
+        <h3>人物与角色</h3>
+        <div class="project-asset-grid">
           <figure>
-            <a class="process-preview" href="assets/process-soundstage-character.webp" aria-label="放大查看：佩戴银色耳机的主角全身造型">
-              <img src="assets/process-soundstage-character.webp" alt="佩戴银色耳机的主角全身造型" width="733" height="1100" loading="lazy">
+            <a class="process-preview" href="assets/projects/video/e8a792e889b2-01.webp" aria-label="放大查看：墨绿站客">
+              <img src="assets/projects/video/e8a792e889b2-01.webp" alt="墨绿站客" width="1440" height="1440" loading="lazy" decoding="async">
             </a>
-            <figcaption>主角全身设定</figcaption>
+            <figcaption><strong>墨绿站客</strong><p>右前方手持吊环的站客，墨绿短外衣和灰褐裤，转头后仍保留右侧前景。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/video/e8a792e889b2-02.webp" aria-label="放大查看：棕发通勤青年">
+              <img src="assets/projects/video/e8a792e889b2-02.webp" alt="棕发通勤青年" width="1440" height="1440" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>棕发通勤青年</strong><p>通勤青年为统一身份，深海、火山与车厢外观只变化湿度和表情。深蓝外套、细蓝格衬衫、森林绿针织和米色裤装。定妆不遮盖面部。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/video/e8a792e889b2-03.webp" aria-label="放大查看：浅棕边座乘客">
+              <img src="assets/projects/video/e8a792e889b2-03.webp" alt="浅棕边座乘客" width="1440" height="1440" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>浅棕边座乘客</strong><p>右边缘座位乘客，浅棕外套深边，受站客遮挡的容貌和鞋型为连续性补齐。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/video/e8a792e889b2-04.webp" aria-label="放大查看：深衣边座乘客">
+              <img src="assets/projects/video/e8a792e889b2-04.webp" alt="深衣边座乘客" width="1440" height="1440" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>深衣边座乘客</strong><p>左边缘座位乘客。细框眼镜、深色外套、灰褐衬衣。镜头中常被驼色站客挡住。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/video/e8a792e889b2-05.webp" aria-label="放大查看：灰棕衣男乘客">
+              <img src="assets/projects/video/e8a792e889b2-05.webp" alt="灰棕衣男乘客" width="1440" height="1440" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>灰棕衣男乘客</strong><p>主角右邻男乘客，灰棕西装外套配深色半高领，低头看手机，黑软包放膝上。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/video/e8a792e889b2-06.webp" aria-label="放大查看：灰衣女乘客">
+              <img src="assets/projects/video/e8a792e889b2-06.webp" alt="灰衣女乘客" width="1440" height="1440" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>灰衣女乘客</strong><p>主角左侧的灰衣女乘客。中分直发和有筋领口的灰针织，坐着持手机，回神后最先侧目。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/video/e8a792e889b2-07.webp" aria-label="放大查看：驼色站客">
+              <img src="assets/projects/video/e8a792e889b2-07.webp" alt="驼色站客" width="1440" height="1440" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>驼色站客</strong><p>左前站客。驼色长衣和短深发形成前景，可保持背向机位，面部仅作补齐。</p></figcaption>
           </figure>
         </div>
-      </article>
-      <article class="process-item">
-        <h3>耳机单品与佩戴镜头</h3>
-        <p>单品图集中交代头梁的弧度、耳罩的形状和银色外壳。切到车厢里的佩戴近景时，主角低头的侧脸和耳罩同框，暖光勾出外壳边缘。这个镜头既能让观众看清耳机的外形和佩戴比例，也把产品放进了主角的通勤情境。</p>
-        <div class="process-pair">
+      </section>
+      <section class="project-asset-group">
+        <h3>场景与布景</h3>
+        <div class="project-asset-grid">
           <figure>
-            <a class="process-preview" href="assets/process-headphones.webp" aria-label="放大查看：耳机单品与佩戴镜头原始素材">
-              <img src="assets/process-headphones.webp" alt="耳机单品与佩戴镜头原始素材" loading="lazy">
+            <a class="process-preview" href="assets/projects/video/e59cbae699af-01.webp" aria-label="放大查看：喷发火山全景">
+              <img src="assets/projects/video/e59cbae699af-01.webp" alt="喷发火山全景" width="960" height="1440" loading="lazy" decoding="async">
             </a>
-            <figcaption>制作资产</figcaption>
+            <figcaption><strong>喷发火山全景</strong><p>场景设定用于「露出喷发的火山」段落。镜头从前景青年摇到火山顶部的烟柱。</p></figcaption>
           </figure>
           <figure>
-            <a class="process-preview" href="assets/soundstage-product.webp" aria-label="放大查看：耳机单品与佩戴镜头成片画面">
-              <img src="assets/soundstage-product.webp" alt="耳机单品与佩戴镜头成片画面" loading="lazy">
+            <a class="process-preview" href="assets/projects/video/e59cbae699af-02.webp" aria-label="放大查看：城市地铁车厢">
+              <img src="assets/projects/video/e59cbae699af-02.webp" alt="城市地铁车厢" width="1080" height="1440" loading="lazy" decoding="async">
             </a>
-            <figcaption>成片截图</figcaption>
-          </figure>
-        </div>
-      </article>
-      <article class="process-item">
-        <h3>水下环境与光线</h3>
-        <p>冷蓝色铺出水下空间，水面透光和上升的气泡交代人物所处的环境。成片从下方仰视，将脸部与银色耳罩留在画面中心。暖色车厢切换到冷蓝水下，镜头用可见的环境变化表现主角戴上耳机后的沉浸感。</p>
-        <div class="process-pair">
-          <figure>
-            <a class="process-preview" href="assets/process-underwater.webp" aria-label="放大查看：水下环境与光线原始素材">
-              <img src="assets/process-underwater.webp" alt="水下环境与光线原始素材" loading="lazy">
-            </a>
-            <figcaption>制作资产</figcaption>
+            <figcaption><strong>城市地铁车厢</strong><p>场景设定用于「青年坐在满是乘客的地铁里」段落。车厢轻晃，主角闭眼，左右乘客维持通勤姿态。</p></figcaption>
           </figure>
           <figure>
-            <a class="process-preview" href="assets/soundstage-immersion.webp" aria-label="放大查看：水下环境与光线成片画面">
-              <img src="assets/soundstage-immersion.webp" alt="水下环境与光线成片画面" loading="lazy">
+            <a class="process-preview" href="assets/projects/video/e59cbae699af-03.webp" aria-label="放大查看：深海梦境水层">
+              <img src="assets/projects/video/e59cbae699af-03.webp" alt="深海梦境水层" width="1028" height="1440" loading="lazy" decoding="async">
             </a>
-            <figcaption>成片截图</figcaption>
-          </figure>
-        </div>
-      </article>
-      <article class="process-item">
-        <h3>车厢构图与叙事收尾</h3>
-        <p>车窗形成画面内的框，两侧乘客和吊环把视线引向中间的主角。结尾回到熟悉的车厢构图，主角手持耳机，邻座乘客转头看向他。人物的动作和旁人的反应把故事带回现实，也让结尾和开场的通勤情境形成呼应。</p>
-        <div class="process-pair">
-          <figure>
-            <a class="process-preview" href="assets/process-train.webp" aria-label="放大查看：车厢构图与叙事收尾原始素材">
-              <img src="assets/process-train.webp" alt="车厢构图与叙事收尾原始素材" loading="lazy">
-            </a>
-            <figcaption>制作资产</figcaption>
+            <figcaption><strong>深海梦境水层</strong><p>场景设定用于「踉跄跌向深海」段落。青年后退失衡，暗场中从岩面接到水里。</p></figcaption>
           </figure>
           <figure>
-            <a class="process-preview" href="assets/soundstage-return.webp" aria-label="放大查看：车厢构图与叙事收尾成片画面">
-              <img src="assets/soundstage-return.webp" alt="车厢构图与叙事收尾成片画面" loading="lazy">
+            <a class="process-preview" href="assets/projects/video/e59cbae699af-04.webp" aria-label="放大查看：滨水城市天际线">
+              <img src="assets/projects/video/e59cbae699af-04.webp" alt="滨水城市天际线" width="1336" height="1440" loading="lazy" decoding="async">
             </a>
-            <figcaption>成片截图</figcaption>
+            <figcaption><strong>滨水城市天际线</strong><p>场景设定用于「青年坐在满是乘客的地铁里」段落。车厢轻晃，主角闭眼，左右乘客维持通勤姿态。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/video/e59cbae699af-05.webp" aria-label="放大查看：火山熔岩地">
+              <img src="assets/projects/video/e59cbae699af-05.webp" alt="火山熔岩地" width="960" height="1440" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>火山熔岩地</strong><p>场景设定用于「窗外光色变化，青年抬头」段落。垂首从蓝灰进入橙光，青年看向左侧。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/video/e59cbae699af-06.webp" aria-label="放大查看：耳机白棚">
+              <img src="assets/projects/video/e59cbae699af-06.webp" alt="耳机白棚" width="1080" height="1440" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>耳机白棚</strong><p>独立的耳机展示空间，给产品轮廓与外壳细节留出干净背景。</p></figcaption>
           </figure>
         </div>
-      </article>
+      </section>
+      <section class="project-asset-group">
+        <h3>道具与产品</h3>
+        <div class="project-asset-grid">
+          <figure>
+            <a class="process-preview" href="assets/projects/video/e98193e585b7-01.webp" aria-label="放大查看：列车吊环">
+              <img src="assets/projects/video/e98193e585b7-01.webp" alt="列车吊环" width="1440" height="960" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>列车吊环</strong><p>作为前景站客手持位置，吊环为灰带、深灰握圈。保持环内开口。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/video/e98193e585b7-02.webp" aria-label="放大查看：深海巨鲨">
+              <img src="assets/projects/video/e98193e585b7-02.webp" alt="深海巨鲨" width="1440" height="720" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>深海巨鲨</strong><p>巨鲨作为独立生物模型六视，深青背、浅腹、粗壮头部和张口轮廓。没有人物，牙列只作造型。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/video/e98193e585b7-03.webp" aria-label="放大查看：通勤手机">
+              <img src="assets/projects/video/e98193e585b7-03.webp" alt="通勤手机" width="1440" height="960" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>通勤手机</strong><p>两位乘客的低头动作使用灰黑手机，锁屏和外壳都留空。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/video/e98193e585b7-04.webp" aria-label="放大查看：银灰头戴耳机">
+              <img src="assets/projects/video/e98193e585b7-04.webp" alt="银灰头戴耳机" width="1440" height="960" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>银灰头戴耳机</strong><p>产品银灰头戴耳机，柔软头梁、椭圆耳罩、转轴和窄按键。表面标识留白，张开的佩戴姿态在各视图一致。</p></figcaption>
+          </figure>
+          <figure>
+            <a class="process-preview" href="assets/projects/video/e98193e585b7-05.webp" aria-label="放大查看：黑色通勤挎包">
+              <img src="assets/projects/video/e98193e585b7-05.webp" alt="黑色通勤挎包" width="1440" height="960" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>黑色通勤挎包</strong><p>右邻男乘客膝上的黑软包，拉链与提带保留，包面不加标识。</p></figcaption>
+          </figure>
+        </div>
+      </section>
     </section>
     <div class="case-links"><a href="work.html">返回作品集</a></div>
   </main>
-
   <footer class="site-footer">
-    <div class="wrap">
-      <p><strong>王中亿</strong></p>
-    </div>
+    <div class="wrap"><p><strong>王中亿</strong></p></div>
   </footer>
 </body>
 </html>
