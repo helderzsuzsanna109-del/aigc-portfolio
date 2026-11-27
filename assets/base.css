@@ -69,7 +69,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 .site-footer strong { margin-right: 10px; }
 .site-footer .demo-note { font-size: .8125rem; color: var(--muted); }
 .site-footer .footer-contact { font-size: .875rem; color: var(--blue); font-weight: 650; }
-.portfolio-footer-qr { width: min(128px, 100%); height: auto; margin-inline-start: auto; }
+.portfolio-footer-profile { width: min(128px, 100%); margin-inline-start: auto; text-align: center; }
+.portfolio-footer-qr { width: 100%; height: auto; }
+.portfolio-footer-profile figcaption { margin-top: 6px; color: var(--muted); font-size: .875rem; }
 
 .cover-plate { display: block; overflow: hidden; position: relative; border-radius: 6px; background: #e1d6c6; }
 .cover-plate img { aspect-ratio: 16 / 9; object-fit: cover; }
