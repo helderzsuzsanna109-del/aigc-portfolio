@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>个人介绍｜王中亿</title>
   <link rel="stylesheet" href="assets/base.css?v=contact-dialog">
-  <link rel="stylesheet" href="assets/interiors.css">
+  <link rel="stylesheet" href="assets/interiors.css?v=about-layout">
   <link rel="stylesheet" href="assets/portfolio.css">
   <script src="assets/contact.js" defer></script>
 </head>
@@ -21,17 +21,14 @@
   </header>
 
   <main class="wrap about-page" aria-label="个人介绍">
-    <section class="about-intro" aria-labelledby="about-name">
-      <div class="about-intro-text">
-        <p class="about-role">AIGC 影视制作与品牌视觉</p>
-        <h1 id="about-name">王中亿</h1>
-        <p class="about-intro-copy">我做 AIGC 短片和品牌视觉，从脚本分镜、画面生成到剪辑交付，也做品牌识别与物料延展。</p>
-        <a id="contact" class="about-button" href="mailto:1179843652@qq.com">联系我</a>
-      </div>
-      <figure class="about-portrait">
-        <img src="assets/profile-portrait.webp" alt="王中亿的个人肖像" width="720" height="960">
-      </figure>
-    </section>
+    <div class="about-intro">
+      <p class="about-role">AIGC 影视制作与品牌视觉</p>
+      <h1>王中亿</h1>
+    </div>
+    <figure class="about-portrait">
+      <img src="assets/profile-portrait.webp" alt="王中亿的个人肖像" width="720" height="960">
+      <figcaption class="about-intro-copy">我做 AIGC 短片和品牌视觉，从脚本分镜、画面生成到剪辑交付，也做品牌识别与物料延展。</figcaption>
+    </figure>
 
     <section class="about-section about-experience" id="experience" aria-labelledby="experience-title">
       <h2 id="experience-title">工作履历</h2>
@@ -65,6 +62,7 @@
   <footer class="site-footer">
     <div class="wrap">
       <p><strong>王中亿</strong></p>
+      <a id="contact" class="about-button" href="mailto:1179843652@qq.com">联系我</a>
     </div>
   </footer>
 </body>

@@ -90,32 +90,35 @@
   .visual-case .case-process-grid { grid-template-columns: 1fr; }
 }
 
-.about-page { padding-block: 55px 64px; }
-  .about-page .about-intro {
-    display: grid;
-    grid-template-columns: minmax(0, 1.14fr) minmax(250px, .86fr);
-    align-items: center;
-    gap: clamp(30px, 7.8vw, 112px);
-    padding-bottom: 54px;
-  }
+.about-page {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 360px);
+  grid-template-rows: auto 1fr;
+  grid-template-areas: "intro portrait" "experience portrait";
+  align-items: start;
+  column-gap: clamp(32px, 6vw, 96px);
+  row-gap: clamp(22px, 2.6vw, 38px);
+  padding-block: 55px 32px;
+}
+  .about-page .about-intro { grid-area: intro; padding-top: clamp(0px, 3vw, 48px); }
+  .about-page .about-experience { grid-area: experience; }
   .about-page .about-role { margin: 0 0 11px; color: var(--blue); font-size: 16px; font-weight: 700; }
   .about-page h1 { margin: 0; font-size: clamp(52px, 6vw, 85px); font-weight: 780; line-height: 1.02; letter-spacing: -.06em; }
   .about-page .about-intro-copy {
-    max-width: 510px;
-    margin: 25px 0 27px;
+    margin: 14px 0 0;
     color: var(--muted);
     font-size: clamp(16px, 1.38vw, 20px);
     line-height: 1.78;
   }
-  .about-page .about-button {
+  .view-about .site-footer .about-button {
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
     gap: 18px;
     min-height: 44px;
-    padding: 0 15px;
+    padding: 0 18px;
     border: 1px solid var(--line);
-    border-radius: 5px;
+    border-radius: 999px;
     color: var(--ink);
     font-size: 14px;
     font-weight: 650;
@@ -123,35 +126,45 @@
     white-space: nowrap;
   }
   .about-page .about-portrait {
-    width: min(100%, 395px);
-    aspect-ratio: 1.07 / 1;
+    grid-area: portrait;
+    width: min(100%, 360px);
     margin: 0;
     justify-self: end;
-    overflow: hidden;
+  }
+  .about-page .about-portrait img {
+    display: block;
+    width: 100%;
+    height: auto;
     border-radius: 7px;
     background: color-mix(in srgb, var(--ink) 6%, var(--paper));
   }
-  .about-page .about-portrait img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 38%; }
   .about-page .about-section { padding-top: 25px; border-top: 1px solid var(--line); }
   .about-page h2 { margin: 0; font-size: clamp(24px, 2.3vw, 34px); line-height: 1.2; font-weight: 740; letter-spacing: -.045em; }
   .about-page h3 { margin: 0; font-size: 16px; line-height: 1.45; font-weight: 700; }
   .about-page .about-experience-row {
     display: grid;
-    grid-template-columns: minmax(130px, .4fr) minmax(0, 1.6fr);
-    gap: 8px 24px;
-    margin-top: 24px;
+    grid-template-columns: max-content minmax(0, 1fr);
+    gap: 8px clamp(12px, 2vw, 28px);
+    margin-top: 16px;
   }
   .about-page .about-date { color: var(--muted); font-variant-numeric: tabular-nums; }
   .about-page .about-responsibilities { display: grid; gap: 13px; margin: 16px 0 0; }
   .about-page .about-responsibilities dt { font-size: 15px; font-weight: 700; }
   .about-page .about-responsibilities dd { margin: 3px 0 0; color: var(--muted); font-size: 15px; line-height: 1.65; }
-  @media (max-width: 670px) {
-    .about-page { padding-block: 30px 42px; }
-    .about-page .about-intro { grid-template-columns: minmax(0, 1fr); gap: 21px; padding-bottom: 29px; }
-    .about-page .about-intro-copy { margin-block: 16px 19px; }
-    .about-page .about-portrait { width: 100%; justify-self: start; aspect-ratio: 1.3 / 1; }
+  @media (max-width: 760px) {
+    .about-page {
+      grid-template-columns: minmax(0, 1fr);
+      grid-template-rows: auto;
+      grid-template-areas: "intro" "portrait" "experience";
+      padding-block: 30px 28px;
+    }
+    .about-page .about-intro { padding-top: 0; }
+    .about-page .about-portrait { justify-self: start; }
     .about-page .about-section { padding-top: 21px; }
     .about-page .about-experience-row { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (max-width: 640px) {
+    .about-page .about-portrait { width: min(100%, 260px); }
   }
 
 .missing-page { display: grid; justify-items: start; align-content: center; min-height: min(590px, 70vh); padding-block: 55px 80px; }
@@ -237,11 +250,6 @@
 .warm-theme .about-page h1 {
   font-size: clamp(59px, 7.8vw, 116px);
   line-height: .98;
-}
-
-.warm-theme .about-page .about-button {
-  border-radius: 999px;
-  padding-inline: 18px;
 }
 
 .warm-theme .missing-page a {
