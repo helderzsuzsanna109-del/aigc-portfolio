@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="assets/interiors.css">
   <link rel="stylesheet" href="assets/portfolio.css">
   <link rel="stylesheet" href="assets/project-gallery.css?v=video-pack">
-  <link rel="stylesheet" href="assets/design-preview.css">
-  <script src="assets/design-preview.js" defer></script>
+  <link rel="stylesheet" href="assets/design-preview.css?v=close-button">
+  <script src="assets/design-preview.js?v=close-button" defer></script>
   <script src="assets/work.js?v=video-pack" defer></script>
   <script src="assets/contact.js" defer></script>
 </head>
@@ -186,14 +186,11 @@
       <img src="assets/design-projects/lanbor/10.webp" alt="蓝泊咖啡 Lanbor 品牌视觉，第 10 段，共 11 段" width="1440" height="2200" decoding="async" loading="lazy">
       <img src="assets/design-projects/lanbor/11.webp" alt="蓝泊咖啡 Lanbor 品牌视觉，第 11 段，共 11 段" width="1440" height="1427" decoding="async" loading="lazy">
     </template>
-    <dialog class="design-preview" id="design-preview" aria-labelledby="design-preview-title">
+    <dialog class="design-preview" id="design-preview" aria-label="全案设计长图预览">
       <div class="design-preview-page">
-        <div class="design-preview-bar">
-          <h2 id="design-preview-title"></h2>
-          <form method="dialog">
-            <button type="submit" aria-label="关闭长图" autofocus>×</button>
-          </form>
-        </div>
+        <form class="design-preview-close" method="dialog">
+          <button type="submit" aria-label="关闭长图" autofocus>×</button>
+        </form>
         <div class="design-preview-images"></div>
       </div>
     </dialog>

@@ -2,7 +2,6 @@
   const dialog = document.querySelector(".design-preview");
   if (typeof dialog.showModal !== "function") return;
 
-  const title = dialog.querySelector("h2");
   const images = dialog.querySelector(".design-preview-images");
   let opener = null;
 
@@ -12,7 +11,7 @@
       event.preventDefault();
       const project = document.getElementById("design-" + card.dataset.designProject);
       opener = card;
-      title.textContent = card.querySelector("h2").textContent;
+      dialog.setAttribute("aria-label", card.querySelector("h2").textContent);
       images.replaceChildren(project.content.cloneNode(true));
       dialog.showModal();
       dialog.scrollTop = 0;
