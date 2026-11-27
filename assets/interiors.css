@@ -148,10 +148,15 @@
     margin-top: 16px;
   }
   .about-page .about-date { color: var(--muted); font-variant-numeric: tabular-nums; }
-  .about-page .about-experience-summary { margin-top: 10px; color: var(--muted); font-size: 15px; line-height: 1.7; }
-  .about-page .about-responsibilities { display: grid; gap: 18px; margin: 20px 0 0; }
-  .about-page .about-responsibilities dt { font-size: 15px; font-weight: 700; }
-  .about-page .about-responsibilities dd { margin: 3px 0 0; color: var(--muted); font-size: 15px; line-height: 1.65; }
+  .about-work-content {
+    display: grid;
+    gap: 10px;
+    margin-top: 10px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .about-work-content strong { color: var(--ink); }
   @media (max-width: 760px) {
     .about-page {
       grid-template-columns: minmax(0, 1fr);
