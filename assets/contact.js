@@ -22,6 +22,10 @@
           <dd><a href="tel:17701163069">17701163069</a></dd>
         </div>
       </dl>
+      <figure class="contact-qr">
+        <img src="assets/contact-wechat-qr.png" alt="微信联系方式二维码" width="348" height="348" loading="lazy">
+        <figcaption>微信扫码联系</figcaption>
+      </figure>
     </div>
   `;
   document.body.append(dialog);

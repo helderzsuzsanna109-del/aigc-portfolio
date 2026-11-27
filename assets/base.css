@@ -69,6 +69,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 .site-footer strong { margin-right: 10px; }
 .site-footer .demo-note { font-size: .8125rem; color: var(--muted); }
 .site-footer .footer-contact { font-size: .875rem; color: var(--blue); font-weight: 650; }
+.portfolio-footer-qr { width: min(128px, 100%); height: auto; margin-inline-start: auto; }
 
 .cover-plate { display: block; overflow: hidden; position: relative; border-radius: 6px; background: #e1d6c6; }
 .cover-plate img { aspect-ratio: 16 / 9; object-fit: cover; }
@@ -158,3 +159,6 @@ html:has(.contact-dialog[open]) {
 .contact-details dd { margin: 3px 0 0; overflow-wrap: anywhere; font-size: 1.06rem; font-weight: 650; }
 .contact-details a { color: var(--blue); }
 .contact-details a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.contact-qr { display: grid; justify-items: center; gap: 6px; margin-top: 16px; text-align: center; }
+.contact-qr img { width: min(174px, 100%); height: auto; }
+.contact-qr figcaption { color: var(--muted); font-size: .875rem; }
