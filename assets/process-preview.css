@@ -45,17 +45,39 @@ html:has(.process-lightbox[open]) {
 .process-lightbox {
   position: fixed;
   inset: 0;
-  width: max-content;
-  height: max-content;
-  min-width: min(18rem, calc(100% - 24px));
-  max-width: min(1440px, calc(100% - 24px));
-  max-height: calc(100dvh - 24px);
-  margin: auto;
+  --arrow-size: 48px;
+  --arrow-gap: clamp(8px, 2vw, 32px);
+  --image-width: min(1440px, calc(100vw - 2 * (12px + var(--arrow-size) + var(--arrow-gap))));
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
   padding: 0;
   border: 0;
+  overflow: hidden;
+  touch-action: manipulation;
+  background: transparent;
+  color: var(--white);
+}
+
+.process-lightbox[open] {
+  display: grid;
+  grid-template-columns: var(--arrow-size) minmax(0, max-content) var(--arrow-size);
+  align-items: center;
+  justify-content: center;
+  gap: var(--arrow-gap);
+}
+
+.process-lightbox-panel {
+  grid-column: 2;
+  grid-row: 1;
+  width: max-content;
+  min-width: min(18rem, var(--image-width));
+  max-width: var(--image-width);
+  overflow: hidden;
   border-radius: 10px;
   background: #211a15;
-  color: var(--white);
   box-shadow: 0 16px 48px #0006;
 }
 
@@ -77,7 +99,8 @@ html:has(.process-lightbox[open]) {
   overflow-wrap: anywhere;
 }
 
-.process-lightbox-bar button {
+.process-lightbox-bar button,
+.process-lightbox-arrow {
   display: grid;
   place-items: center;
   width: 44px;
@@ -92,19 +115,51 @@ html:has(.process-lightbox[open]) {
   cursor: pointer;
 }
 
-.process-lightbox-bar button:hover {
+.process-lightbox-bar button:hover,
+.process-lightbox-arrow:hover {
   background: #ffffff24;
 }
 
-.process-lightbox-bar button:focus-visible {
+.process-lightbox-bar button:focus-visible,
+.process-lightbox-arrow:focus-visible {
   outline: 2px solid var(--amber);
   outline-offset: -2px;
 }
 
 .process-lightbox-image {
+  display: block;
   width: auto;
   height: auto;
-  max-width: min(1440px, calc(100vw - 24px));
+  max-width: var(--image-width);
   max-height: calc(100dvh - 88px);
   margin-inline: auto;
+}
+
+.process-lightbox-arrow {
+  grid-row: 1;
+  z-index: 1;
+  width: var(--arrow-size);
+  height: var(--arrow-size);
+  background: #211a15e8;
+  border: 1px solid #fff7;
+  font-size: 2.25rem;
+  box-shadow: 0 2px 12px #0005;
+}
+
+.process-lightbox-arrow:first-child { grid-column: 1; }
+.process-lightbox-arrow:last-child { grid-column: 3; }
+.process-lightbox-arrow[hidden] { display: none; }
+
+@media (max-width: 640px) {
+  .process-lightbox {
+    --arrow-size: 44px;
+    --image-width: calc(100vw - 24px);
+  }
+
+  .process-lightbox[open] { grid-template-columns: var(--image-width); }
+  .process-lightbox-panel,
+  .process-lightbox-arrow:first-child,
+  .process-lightbox-arrow:last-child { grid-column: 1; }
+  .process-lightbox-arrow:first-child { justify-self: start; }
+  .process-lightbox-arrow:last-child { justify-self: end; }
 }
